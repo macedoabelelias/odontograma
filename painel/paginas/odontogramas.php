@@ -179,9 +179,10 @@ if (@$odontogramas == 'ocultar') {
 						<div class="col-md-2 mb-2 col-6">
 							<label>Ação</label>
 							<select name="acao" id="acao" class="form-select">								
-								<option value="carie">Cárie, Canal, outros...</option>
+								<option value="carie">Procedimento</option>
 								<option value="extraidos">Extraído</option>
-								<option value="extrair">Para Extrair</option>
+								<option value="extrair">Extrair</option>
+								<!-- <option value="restaurado">Restaurado</option> -->
 								<option value="tratados">Tratado / Finalizado</option>
 							</select>
 						</div>
@@ -189,7 +190,7 @@ if (@$odontogramas == 'ocultar') {
 
 						<div class="col-md-4 col-6">
 							<label>Descrever Procedimento</label>
-							<input maxlength="100" type="text" class="form-control" id="procedimento" name="procedimento" placeholder="Restauração dente Face Mesial e Face Oclusal">
+							<input maxlength="100" type="text" class="form-control" id="procedimento" name="procedimento" placeholder="Descreva o procedimento a ser realizado">
 						</div>
 
 						<div class="col-md-4 col-6">
@@ -638,7 +639,7 @@ function listarDeciduos(){
 
 	        success:function(result){   
 	        	if(result.trim() == "Salvo com Sucesso"){
-	        		 listarPermanentes();
+	        	   listarPermanentes();
 		           listarDeciduos();		           
 		           limparCamposItens();   
 		           limparEstilos();

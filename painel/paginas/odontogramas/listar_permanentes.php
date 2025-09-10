@@ -457,9 +457,9 @@ echo <<<HTML
 
 <div align="center" style="font-size: 12px; font-weight: 400; margin-bottom: 20px" >
         <span style="margin-right: 15px"><i class="fa fa-circle text-danger"></i> Procedimentos</span>
-        <span style="margin-right: 15px"><i class="fa fa-square text-success"></i> Já Tratados</span>
+        <span style="margin-right: 15px"><i class="fa fa-square text-success"></i> Tratados</span>
          <span style="margin-right: 15px"><i class="fa fa-square text-dark"></i> Extraídos</span>
-          <span style="margin-right: 15px"><i class="fa fa-close text-dark"></i> Para Extrair</span>
+          <span style="margin-right: 15px"><i class="fa fa-close text-dark"></i> Extração Indicada</span>
 </div>
 
 HTML;

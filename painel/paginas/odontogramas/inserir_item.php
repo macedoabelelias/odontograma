@@ -16,7 +16,10 @@ if($id == ""){
 	$id = 0;
 }
 
-if($dente == "55" or $dente == "54" or $dente == "53" or $dente == "52" or $dente == "51" or $dente == "61" or $dente == "62" or $dente == "63" or $dente == "64" or $dente == "65" or $dente == "85" or $dente == "84" or $dente == "83" or $dente == "82" or $dente == "81" or $dente == "71" or $dente == "72" or $dente == "73" or $dente == "74" or $dente == "75" ){
+if($dente == "55" or $dente == "54" or $dente == "53" or $dente == "52" or $dente == "51" or $dente == "61" or 
+	$dente == "62" or $dente == "63" or $dente == "64" or $dente == "65" or $dente == "85" or $dente == "84" or 
+	$dente == "83" or $dente == "82" or $dente == "81" or $dente == "71" or $dente == "72" or $dente == "73" or 
+	$dente == "74" or $dente == "75" ){
 	$deciduo = 'Sim';
 }else{
 	$deciduo = 'Não';
