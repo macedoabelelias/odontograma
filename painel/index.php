@@ -240,7 +240,7 @@ if (@count($res1) > 0) {
 
 									<li class="dropdown nav-item  main-header-message <?php echo $receber ?>">
 										<a class="new nav-link" data-bs-toggle="dropdown" href="javascript:void(0);">
-											<small><i class="fa fa-dollar"></i></small>
+											<small><i class="fa fa-money"></i></small>
 											<span class="badge  header-badge" style="background:green"><?php echo $linhas ?></span>
 										</a>
 
@@ -308,7 +308,7 @@ if (@count($res1) > 0) {
 
 									<li class="dropdown nav-item  main-header-message <?php echo $pagar ?>">
 										<a class="new nav-link" data-bs-toggle="dropdown" href="javascript:void(0);">
-											<small><i class="fa fa-dollar"></i></small>
+											<small><i class="fa fa-money"></i></small>
 											<span class="badge  header-badge" style="background:red"><?php echo $linhas ?></span>
 										</a>
 
@@ -424,7 +424,7 @@ if (@count($res1) > 0) {
 							<li class="slide <?php echo @$home ?>">
 								<a class="side-menu__item" href="index.php">
 									<i class="fa fa-home text-white"></i>
-									<span class="side-menu__label" style="margin-left: 15px">Dashboard</span></a>
+									<span class="side-menu__label" style="margin-left: 15px">Home</span></a>
 							</li>
 
 
@@ -452,7 +452,7 @@ if (@count($res1) > 0) {
 
 							<li class="slide <?php echo @$menu_cadastros ?>">
 								<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
-									<i class="fa fa-save text-white mt-1"></i>
+									<i class="fa fa-folder-open text-white mt-1"></i>
 									<span class="side-menu__label" style="margin-left: 15px">Cadastros</span><i
 										class="angle fe fe-chevron-right"></i></a>
 								<ul class="slide-menu">
@@ -495,7 +495,7 @@ if (@count($res1) > 0) {
 
 								<li class="slide <?php echo @$menu_agendamentos ?>">
 								<a class="side-menu__item" data-bs-toggle="slide" href="javascript:void(0);">
-									<i class="fa fa-calendar text-white mt-1"></i>
+									<i class="fa fa-calendar-plus text-white mt-1"></i>
 									<span class="side-menu__label" style="margin-left: 15px">Agendamentos</span><i
 										class="angle fe fe-chevron-right"></i></a>
 								<ul class="slide-menu">
@@ -576,14 +576,14 @@ if (@count($res1) > 0) {
 
 							<li class="slide <?php echo @$odontogramas ?>">
 								<a class="side-menu__item" href="odontogramas">
-									<i class="fa fa-file-o text-white"></i>
+									<i class="fa fa-tooth text-white"></i>
 									<span class="side-menu__label" style="margin-left: 15px">Odontogramas</span></a>
 							</li>
 
 
 							<li class="slide <?php echo @$tratamentos ?>">
 								<a class="side-menu__item" href="tratamentos">
-									<i class="fa fa-calendar-plus-o text-white"></i>
+									<i class="fa fa-calendar-check text-white"></i>
 									<span class="side-menu__label" style="margin-left: 15px">Tratamentos </span></a>
 							</li>
 
@@ -591,7 +591,7 @@ if (@count($res1) > 0) {
 
 							<li class="slide <?php echo @$orcamentos ?>">
 								<a class="side-menu__item" href="orcamentos">
-									<i class="fa fa-file-pdf-o text-white"></i>
+									<i class="fa fa-medkit text-white"></i>
 									<span class="side-menu__label" style="margin-left: 15px">Orçamentos </span></a>
 							</li>
 

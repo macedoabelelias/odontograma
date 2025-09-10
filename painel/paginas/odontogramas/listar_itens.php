@@ -49,11 +49,11 @@ for($i=0; $i<$linhas; $i++){
 	if($acao == "carie"){
 		$icone_acao = '<i class="fa fa-circle text-danger"></i>';
 	}else if($acao == "extraidos"){
-		$icone_acao = '<i class="fa fa-square text-dark"></i>';
+		$icone_acao = '<i class="fa fa-circle text-dark"></i>';
 	}else if($acao == "extrair"){
 		$icone_acao = ' <i class="fa fa-close text-dark"></i>';
 	}else if($acao == "tratados"){
-		$icone_acao = '<i class="fa fa-square text-success"></i>';
+		$icone_acao = '<i class="fa fa-circle text-success"></i>';
 	}
 
 		

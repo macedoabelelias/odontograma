@@ -339,7 +339,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon iconBgSusses text-center align-self-center overflow-hidden">
-								<i class="fe fe-user tx-16 text-white"></i>
+								<i class="fe fe-user tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -372,7 +372,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class="zoom circle-icon iconBgDanger text-center align-self-center overflow-hidden">
-								<i class="bi bi-currency-dollar tx-16 text-white"></i>
+								<i class="bi bi-currency-dollar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -404,7 +404,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon iconBgSusses text-center align-self-center overflow-hidden">
-								<i class="bi bi-currency-dollar tx-16 text-white"></i>
+								<i class="bi bi-currency-dollar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -439,7 +439,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon text-center align-self-center overflow-hidden <?php echo $classe_saldo2 ?>">
-								<i class="bi bi-currency-dollar tx-16 text-white"></i>
+								<i class="bi bi-currency-dollar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -478,7 +478,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon iconBgDanger text-center align-self-center overflow-hidden">
-								<i class="fe fe-calendar tx-16 text-white"></i>
+								<i class="fe fe-calendar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -511,7 +511,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class="zoom circle-icon iconBgSusses text-center align-self-center overflow-hidden">
-								<i class="bi bi-calendar tx-16 text-white"></i>
+								<i class="bi bi-calendar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -543,7 +543,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon iconBgSusses text-center align-self-center overflow-hidden">
-								<i class="bi bi-currency-dollar tx-16 text-white"></i>
+								<i class="bi bi-currency-dollar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -578,7 +578,7 @@ if (@$home == 'ocultar') {
 						<div class="col-4">
 
 							<div class=" zoom circle-icon text-center align-self-center overflow-hidden iconBgDanger">
-								<i class="bi bi-calendar tx-16 text-white"></i>
+								<i class="bi bi-calendar tx-16 text-black"></i>
 							</div>
 
 						</div>
@@ -652,7 +652,7 @@ HTML;
 <tr>
 
 			<div class="col-xl-12" style="margin-bottom: -18px;">
-			<div class="card sales-card border border-white" style="box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);">
+			<div class="card sales-card border border-black" style="box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.1);">
 			
 
 <div style="font-size: 12px; padding: 4px"><b>{$titulo}:</b> {$msg}</div>
