@@ -218,7 +218,7 @@ if(@$consultas == 'ocultar'){
 
 
 
-<!-- Modal RaioX -->
+<!-- Modal Exames -->
 <div class="modal fade" id="modalExames" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
@@ -290,19 +290,19 @@ if(@$consultas == 'ocultar'){
 <div class="modal fade" id="modalReceita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog modal-lg" style="width:80%">
 		<div class="modal-content">
-			<div class="modal-header">
+			<div class="modal-header  bg-primary text-white">
 				<h4 class="modal-title" id="exampleModalLabel"><span id="nome_receita"></span>				
 
 				</h4>
-				<button id="btn-fechar-receita" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				
+				<button id="btn-fechar-receita" aria-label="Close"  class="btn-close" data-bs-dismiss="modal" type="button" ><span
+						class="text-white" aria-hidden="true">&times;</span></button>
 			</div>
 			<form method="POST" action="rel/receita_class.php" target="_blank">
 			<div class="modal-body">
 				<div class="row">
 						<div class="col-md-3">	
-								<label>Remédio</label>
+								<label>Medicamento</label>
 								<input type="text" id="remedio" class="form-control" placeholder="Ciprofloxacino 500 mg" >			
 							</div>
 
@@ -319,7 +319,8 @@ if(@$consultas == 'ocultar'){
 
 							<div class="col-md-1" style="margin-top: 22px">
 								
-								<button onclick="inserirItem()" type="button" class="btn btn-success"><i class="fa fa-check"></i></button>	
+								<button onclick="inserirItem()" type="button" class="btn btn-success">
+									<i class="fa fa-check"></i></button>	
 							</div>	
 				</div>
 

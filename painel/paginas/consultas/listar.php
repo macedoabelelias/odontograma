@@ -307,6 +307,13 @@ function anamnese(paciente, nome){
 		listarAnamnese(paciente);
 }
 
+function receita(paciente, nome){
+		$('#id_receita').val(paciente);	
+		$('#nome_receita').text(nome);	
+		$('#modalReceita').modal('show');
+		listarRemedios(paciente);
+}
+
 function atestado(paciente, nome){
 		$('#id_atestado').val(paciente);	
 		$('#nome_atestado').text(nome);	
