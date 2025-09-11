@@ -286,7 +286,64 @@ if(@$consultas == 'ocultar'){
 </div>
 
 
+<!-- Modal receita -->
+<div class="modal fade" id="modalReceita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg" style="width:80%">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title" id="exampleModalLabel"><span id="nome_receita"></span>				
 
+				</h4>
+				<button id="btn-fechar-receita" type="button" class="close" data-dismiss="modal" aria-label="Close" style="margin-top: -25px">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<form method="POST" action="rel/receita_class.php" target="_blank">
+			<div class="modal-body">
+				<div class="row">
+						<div class="col-md-3">	
+								<label>Remédio</label>
+								<input type="text" id="remedio" class="form-control" placeholder="Ciprofloxacino 500 mg" >			
+							</div>
+
+							<div class="col-md-3">	
+								<label>Quantidade</label>
+								<input type="text" id="quantidade" class="form-control" placeholder="1 Caixa, 14 Compromidos, etc">			
+							</div>	
+						
+				
+					<div class="col-md-5">	
+								<label>Forma de Uso</label>
+								<input type="text" id="uso" class="form-control" placeholder="1 Comprimido a cada duas horas">			
+							</div>	
+
+							<div class="col-md-1" style="margin-top: 22px">
+								
+								<button onclick="inserirItem()" type="button" class="btn btn-success"><i class="fa fa-check"></i></button>	
+							</div>	
+				</div>
+
+				<div class="row" style="margin-top: 20px; border-top: 1px solid #595858">
+					<div id="listar_remedios">
+						
+					</div>
+				</div>
+
+				<br>
+				<input type="hidden" name="id" id="id_receita">
+				<small><div id="mensagem_receita" align="center" class="mt-3"></div></small>		
+			</div>
+
+			<div class="modal-footer"> 
+
+			<a onclick="limparReceita()" class="btn btn-danger">Limpar Receita</a>
+
+				<button type="submit" class="btn btn-primary">Gerar Receita</button>
+			</div>
+			</form>		
+		</div>
+	</div>
+</div>
 
 
 
@@ -663,6 +720,71 @@ if(@$consultas == 'ocultar'){
 	}
 
 
+function inserirItem(){
+	var remedio = $("#remedio").val();
+	var quantidade = $("#quantidade").val();
+	var uso = $("#uso").val();
+	var id_paciente = $("#id_receita").val();
+
+	if(remedio == ""){
+		alert('Descreva o Remédio!');
+		return;
+	}
+
+	$('#mensagem_receita').text('');
+	 $.ajax({
+        url: 'paginas/' + pag + "/inserir_remedio.php",
+        method: 'POST',
+        data: {id_paciente, remedio, quantidade, uso},
+        dataType: "html",
+
+        success:function(result){        	
+            if(result.trim() === 'Inserindo com Sucesso'){
+            	listarRemedios(id_paciente);
+            	limparCamposRemedio()
+            }else{
+            	$('#mensagem_receita').text(result);
+            }
+           
+        }
+    });
+
+}
+
+function listarRemedios(id){
+		 $.ajax({
+        url: 'paginas/' + pag + "/listar_remedios.php",
+        method: 'POST',
+        data: {id},
+        dataType: "html",
+
+        success:function(result){        	
+            $("#listar_remedios").html(result);
+            $('#mensagem_receita').text('');
+        }
+    });
+	}
+
+function limparCamposRemedio(){
+	$("#remedio").val('');
+	$("#quantidade").val('');
+	$("#uso").val('');
+}
+
+function limparReceita(){
+	var id_paciente = $("#id_receita").val();
+	 $.ajax({
+        url: 'paginas/' + pag + "/limpar_receita.php",
+        method: 'POST',
+        data: {id_paciente},
+        dataType: "html",
+
+        success:function(result){        	
+            listarRemedios(id_paciente);
+            limparCamposRemedio();
+        }
+    });
+}
 
 
 
