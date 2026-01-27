@@ -247,12 +247,11 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 
 	left:50;
 
-	top:130;
+	top:200;
 
 	width:80%;
 
-	opacity:10%;
-
+	opacity:4%;
 }
 
 
@@ -289,7 +288,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 				<td style="border: 1px; solid #000; width: 20%; text-align: left;">
 
-					<img style="margin-top: 5px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="140px">
+					<img style="margin-top: 2px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="120px">
 
 				</td>
 
@@ -347,7 +346,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 				<tr >
 
-					<td style="width:5%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">NOME: </td>
+					<td style="width:5%; border-bottom: : 1px solid #000;"><b>NOME: </td>
 
 					<td style="width:35%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -357,7 +356,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					
 
-					<td style="width:5%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">CPF: </td>
+					<td style="width:5%; border-bottom: : 1px solid #000;"><b>CPF: </td>
 
 					<td style="width:13%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -369,7 +368,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:9%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">TELEFONE: </td>
+					<td style="width:9%; border-bottom: : 1px solid #000;"><b>TELEFONE: </td>
 
 					<td style="width:13%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -379,9 +378,9 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:5%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">SEXO: </td>
+					<td style="width:5%; border-bottom: : 1px solid #000;"><b>GÊNERO: </td>
 
-					<td style="width:5%; border-bottom: : 1px solid #000;">
+					<td style="width:5%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
 						<?php echo @mb_strtoupper($sexo) ?>
 
@@ -395,7 +394,7 @@ if($marca_dagua == 'Sim'){ ?>
 
     			<tr >
 
-					<td style="width:8%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">CONVÊNIO: </td>
+					<td style="width:8%; border-bottom: : 1px solid #000;"><b>CONVÊNIO: </td>
 
 					<td style="width:30%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -405,7 +404,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					
 
-					<td style="width:5%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">IDADE: </td>
+					<td style="width:5%; border-bottom: : 1px solid #000;"><b>IDADE: </td>
 
 					<td style="width:11%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -417,7 +416,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">NASCIMENTO: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>NASCIMENTO: </td>
 
 					<td style="width:13%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -427,9 +426,9 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:13%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">TIPO SANGUÍNEO: </td>
+					<td style="width:13%; border-bottom: : 1px solid #000;"><b>TIPO SANGUÍNEO: </td>
 
-					<td style="width:5%; border-bottom: : 1px solid #000;">
+					<td style="width:5%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
 						<?php echo @mb_strtoupper($tipo_sanguineo) ?>
 
@@ -443,9 +442,9 @@ if($marca_dagua == 'Sim'){ ?>
 
     			<tr >
 
-					<td style="width:8%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">PROFISSÃO </td>
+					<td style="width:9%; border-bottom: : 1px solid #000;"><b>PROFISSÃO: </td>
 
-					<td colspan="3" style="width:30%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
+					<td colspan="3" style="width:30%; border-right: : 1px solid #000; border-bottom: : 1px solid #000">
 
 						<?php echo @mb_strtoupper($profissao) ?>
 
@@ -459,9 +458,9 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">ESTADO CIVIL: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>ESTADO CIVIL: </td>
 
-					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;">
+					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;  border-bottom: : 1px solid #000">
 
 						<?php echo @mb_strtoupper($estado_civil) ?>
 
@@ -479,7 +478,7 @@ if($marca_dagua == 'Sim'){ ?>
 
     			<tr >
 
-					<td style="width:8%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">OBS </td>
+					<td style="width:8%; border-bottom: : 1px solid #000;"><b>OBS </td>
 
 					<td colspan="3" style="width:30%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -495,9 +494,9 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">ENDEREÇO: </td>
+					<td style="width:8%; border-bottom: : 1px solid #000;"><b>ENDEREÇO: </td>
 
-					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;">
+					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;  border-bottom: : 1px solid #000">
 
 						<?php echo @mb_strtoupper($endereco_paciente) ?>
 
@@ -517,7 +516,7 @@ if($marca_dagua == 'Sim'){ ?>
 
     				<tr >
 
-					<td style="width:8%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">RESP </td>
+					<td style="width:8%; border-bottom: : 1px solid #000;"><b>RESP </td>
 
 					<td colspan="3" style="width:30%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -533,9 +532,10 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">CPF RESP: </td>
 
-					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;">
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>CPF RESP: </td>
+
+					<td colspan="3" style="width:13%; border-bottom: : 1px solid #000;  border-bottom: : 1px solid #000">
 
 						<?php echo @mb_strtoupper($cpf_responsavel) ?>
 
@@ -578,7 +578,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
 				<tr>
-					<td style="width:15%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">PROCEDIMENTO: </td>
+					<td style="width:15%; border-bottom: : 1px solid #000;"><b>PROCEDIMENTO: </td>
 
 					<td style="width:35%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -586,7 +586,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					</td>					
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">DATA: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>DATA: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -595,7 +595,7 @@ if($marca_dagua == 'Sim'){ ?>
 					</td>
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">HORA: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>HORA: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -608,7 +608,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
     			<tr>
-					<td style="width:15%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">PROFISSIONAL: </td>
+					<td style="width:15%; border-bottom: : 1px solid #000;"><b>PROFISSIONAL: </td>
 
 					<td style="width:35%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -616,7 +616,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					</td>					
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">STATUS: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>STATUS: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000; color:<?php echo $cor_status ?>">
 
@@ -625,7 +625,7 @@ if($marca_dagua == 'Sim'){ ?>
 					</td>
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">PAGO: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>PAGO: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000; color:<?php echo $cor_pago ?>">
 
@@ -639,7 +639,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
     			<tr>
-					<td style="width:15%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">FORMA PAGAMENTO: </td>
+					<td style="width:15%; border-bottom: : 1px solid #000;"><b>FORMA PAGAMENTO: </td>
 
 					<td style="width:35%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -647,7 +647,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					</td>					
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">VALOR: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>VALOR: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000; color:<?php echo $cor_pago ?>">
 
@@ -656,7 +656,7 @@ if($marca_dagua == 'Sim'){ ?>
 					</td>
 
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">RETORNO: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>RETORNO: </td>
 
 					<td style="width:15%; border-bottom: : 1px solid #000; border-right: 1px solid #000;">
 
@@ -671,7 +671,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
     				<tr>
-					<td style="width:15%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">CONVÊNIO: </td>
+					<td style="width:15%;border-bottom: : 1px solid #000;"><b>CONVÊNIO: </td>
 
 					<td style="width:35%; border-right: : 1px solid #000; border-bottom: : 1px solid #000;">
 
@@ -679,7 +679,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					</td>					
 
-					<td style="width:10%; border-right: 1px solid #000;border-bottom: : 1px solid #000;">Nº CONVÊNIO: </td>
+					<td style="width:10%; border-bottom: : 1px solid #000;"><b>Nº CONVÊNIO: </td>
 
 					<td colspan="3" style="width:35%; border-bottom: : 1px solid #000; border-right: 1px solid #000; ">
 
@@ -696,7 +696,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 
     				<tr>
-					<td style="width:15%; border-right: 1px solid #000;">AGENDADO POR: </td>
+					<td style="width:15%;"><b>AGENDADO POR: </b></td>
 
 					<td style="width:35%; border-right: : 1px solid #000; ">
 
@@ -704,7 +704,7 @@ if($marca_dagua == 'Sim'){ ?>
 
 					</td>					
 
-					<td style="width:10%; border-right: 1px solid #000;">LANÇADO EM: </td>
+					<td style="width:10%; "><b>LANÇADO EM: </b></td>
 
 					<td colspan="3" style="width:35%;  border-right: 1px solid #000; ">
 

@@ -134,7 +134,7 @@ if (@count($res) > 0) {
 
   <div class="receipt-main">
 
-    <img class="imagem" src="<?php echo $url_sistema ?>img/logo.jpg">
+    <img class="imagem" style="margin-left: 15px;" src="<?php echo $url_sistema ?>img/logo.jpg">
 
 
 

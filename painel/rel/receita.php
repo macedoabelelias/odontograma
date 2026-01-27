@@ -70,7 +70,7 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 	left:50;
 	top:200;
 	width:80%;
-	opacity:10%;
+	opacity:2%;
 }
 
 </style>

@@ -83,9 +83,9 @@ body {font-family: 'Tw Cen MT', sans-serif;}
 .marca{
 	position:fixed;
 	left:50;
-	top:130;
+	top:200;
 	width:80%;
-	opacity:10%;
+	opacity:4%;
 }
 </style>
 </head>
@@ -99,7 +99,7 @@ if($marca_dagua == 'Sim'){ ?>
 		<table style="width: 100%; border: 0px solid #ccc;">
 			<tr>
 				<td style="border: 1px; solid #000; width: 20%; text-align: left;">
-					<img style="margin-top: 5px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="140px">
+					<img style="margin-top: 2px; margin-left: 7px;" id="imag" src="<?php echo $url_sistema ?>img/logo.jpg" width="130px">
 				</td>
 				<td style="width: 20%; text-align: left; font-size: 13px;">
 				
@@ -108,7 +108,7 @@ if($marca_dagua == 'Sim'){ ?>
 				
 				</td>
 				<td style="width: 55%; text-align: right; font-size: 9px;padding-right: 10px;">
-						<b><big>ATESTADO MÉDICO</big></b><br>
+						<b><big>ATESTADO ODONTOLÓGICO</big></b><br>
 						<br>
 						 <?php echo mb_strtoupper($data_hoje) ?>
 				</td>
@@ -116,26 +116,35 @@ if($marca_dagua == 'Sim'){ ?>
 		</table>
 	</div>
 <br>
-		
-		
-		<div align="center" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:17px"><b>ATESTADO MÉDICO</b></div>
+
+
+
+		<div align="center" style="margin-top: 25px; margin-bottom: 10px; border-bottom: 1px solid #000; font-size:17px"><b>ATESTADO ODONTOLÓGICO</b></div>
 </div>
 <div id="footer" class="row">
 <hr style="margin-bottom: 0;">
 	<table style="width:100%;">
 		<tr style="width:100%;">
-			<td style="width:60%; font-size: 10px; text-align: left;"><?php echo $nome_sistema ?> / Telefone: <?php echo $telefone_sistema ?> / Email: <?php echo $email_sistema ?></td>
+			<td style="width:60%; font-size: 10px; text-align: left;"><?php echo $nome_sistema ?> / Telefone: <?php echo $telefone_sistema ?> / E-mail: <?php echo $email_sistema ?></td>
 			<td style="width:40%; font-size: 10px; text-align: right;"><p class="">  </p></td>
 		</tr>
 	</table>
 </div>
-<div id="content" style="margin-top: 70px;">
+<div id="content" style="margin-top: 80px;">
 <div style="font-size: 15px;">
-	Atesto para os devidos fins que o Sr(a) <b><?php echo $nome_paciente ?></b> portador do CPF <?php echo $cpf_paciente ?> esteve sob cuidados médicos no dia <?php echo $data_hoje ?> e deverá se afastar de suas atividades pelo período de <?php echo $datas ?> <b>(<?php echo $dias ?> Dias) </b> por motivo de <?php echo $motivo ?>
+	<p style="margin-left:45px">Eu, Dr(a). <?php echo $nome_medico ?>, cirurgião dentista, inscrito no CRO sob o nº: 
+	<?php echo $cro_medico ?>, atesto para fins <p>trabalhistas que o(a) paciente <b><?php echo $nome_paciente ?></b>, 
+	portador(a) do CPF nº: <?php echo $cpf_paciente ?>, esteve <p>em meu consultório no dia __/__/____, necessitando de 
+	afastamento de suas atividades por <b><?php echo $dias ?> dias</b>, devido a <p>tratamento odontológico. Durante este período 
+		deverá observar repouso e cuidados especiais conforme <p><b>orientação odontológica.</b> As orientações serão fornecidas em duas vias e assinadas por ambos.</p>
+	 <p style="margin-left:45px">Confirmo a validade do presente atestado, conforme o artigo 473 da CLT, a Lei nº 605/1949 e  
+	Art. 159 <p>do Dec. nº 10.854/2021 da Legislação e Direitos do Trabalhador. </p>
+	
+
 </div>
 <?php if($obs != ""){ ?>
-<div style="margin-top: 20px; border:1px solid #000; font-size: 14px; padding:5px">
-	<b>Informações Relevantes</b>
+<div style="margin-top: 40px; border:1px solid #000; font-size: 14px; padding:5px">
+	<b>Informações Relevantes / CID</b>
 	<p style="font-size: 13px"><?php echo $obs ?></p>
 </div>
 <?php } ?>
