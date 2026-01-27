@@ -308,10 +308,11 @@ echo <<<HTML
 </table>
 
 <div align="center" style="font-size: 12px; font-weight: 400; margin-bottom: 20px" >
-        <span style="margin-right: 15px"><i class="fa fa-circle text-danger"></i> Procedimentos</span>
-        <span style="margin-right: 15px"><i class="fa fa-square text-success"></i> Já Tratados</span>
-         <span style="margin-right: 15px"><i class="fa fa-square text-dark"></i> Extraídos</span>
-          <span style="margin-right: 15px"><i class="fa fa-close text-dark"></i> Para Extrair</span>
+        <span style="margin-right: 20px"><i class="fa fa-circle text-danger"></i> Procedimentos</span>
+        <span style="margin-right: 20px"><i class="fa fa-circle text-primary"></i> Tratados / Realizados</span>        
+        <span style="margin-right: 20px"><i class="fa fa-close text-dark"></i> Extraçao Indicada</span>
+		 <span style="margin-right: 20px"><i class="fa fa-plus-circle text-danger"></i> Emergência</span>
+
 </div>
 
 
